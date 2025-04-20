@@ -12,8 +12,7 @@ phases:
       - echo Pre-build phase...
   build:
     commands:
-      - echo Build phase...
-      - npm run build
+      - echo no Build phase...
 artifacts:
   files:
     - app.js
