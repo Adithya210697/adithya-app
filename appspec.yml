@@ -1,0 +1,10 @@
+version: 0.0
+Os: linux
+Files:
+  - source: /
+    destination: /home/ec2-user/sample-app
+Hooks:
+  AfterInstall:
+    - location: scripts/start_server.sh
+      timeout: 300
+      runas: root
